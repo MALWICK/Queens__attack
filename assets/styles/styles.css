@@ -15,7 +15,7 @@ body {
   border: 2px solid #ebe5e5;
   border-spacing: 30px;
   width: fit-content;
-  box-shadow: rgba(0, 0, 0, 35%);
+  box-shadow: #000000c8;
 }
 
 .btn {
