@@ -37,8 +37,6 @@ function Position () {
 
 function Attack () {
   console.log(selectedSquare)
-  const correct = String.fromCodePoint(128522)
-  const wrong = String.fromCodePoint(128531)
   if (selectedSquare.length !== 2) {
     message.style.color = 'black'
     message.textContent = ' to play make two moves!'
@@ -57,16 +55,16 @@ function Attack () {
     const positionRightLeft = Math.abs(parseInt(index1) - parseInt(index2))
 
     if (unit11 === unit21) {
-      message.textContent = ` attack sucessful Great Job`
+      message.textContent = ' attack sucessful Great Job'
     } else if (unit12 === unit22) {
-      message.textContent = `attack sucessful Great Job`
+      message.textContent = 'attack sucessful Great Job'
     } else if (unit11 - unit12 === unit21 - unit22) {
-      message.textContent = `attack sucessful Great Job`
+      message.textContent = 'attack sucessful Great Job'
     } else if (positionRightLeft % 9 === 0) {
-      message.textContent = `attack sucessful Great Job`
+      message.textContent = 'attack sucessful Great Job'
     } else {
       message.style.color = 'red'
-      message.textContent = ` Oops!  attack failed sorry`
+      message.textContent = ' Oops!  attack failed sorry'
     }
   }
 }
